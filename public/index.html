@@ -6,24 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Technical Dictionary</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <script src="./js/jquery-3.2.1.slim.min.js"></script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <!-- Content here -->
-        <h1>My Dictionary</h1>
-        <div>
-            Dictionary Empty
-        </div>
-        <form class="form-inline" action="/dictionary-api" method="post">
-            <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputTerm2" placeholder="new term...">
-            <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputDefinition2" placeholder="new definition...">
-            <button type="submit" class="btn btn-primary mb-2">Submit</button>
-        </form>
-    </div>
+    <h1>My Dictionary</h1>
+    <form class="form-inline">
+        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputTerm2" id="term" name="term" placeholder="new term...">
+        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputDefinition2" id="description" name="description"
+            placeholder="new definition...">
+        <button type="submit" class="btn btn-primary mb-2">Add Term</button>
+    </form>
+    <br/>
+    <dl></dl>
+    <p>Dictionary is empty</p>
+    <br/>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/dictionary.js"></script>
 </body>
 
 </html>
