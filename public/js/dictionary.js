@@ -3,7 +3,7 @@ $(document).ready(function () {
     $.getJSON('/dictionary-api', printTerms);
     $('form').submit(function (e) {
         e.preventDefault();
-        $.post('/dictionary-api', {term: $('#term').val(), defined: $('#description').val()}, printTerms);
+        $.post('/dictionary-api', {term: $('#term').val(), description: $('#description').val()}, printTerms);
         this.reset();
     });
 
